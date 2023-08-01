@@ -20,6 +20,12 @@
 		84CC12782A79485C008BB0AE /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CC12772A79485C008BB0AE /* String+Extensions.swift */; };
 		84CC127B2A794E90008BB0AE /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CC127A2A794E90008BB0AE /* Model.swift */; };
 		84CC127D2A7950BF008BB0AE /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CC127C2A7950BF008BB0AE /* LoginView.swift */; };
+		84CC127F2A795448008BB0AE /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CC127E2A795448008BB0AE /* MainView.swift */; };
+		84CC12812A795607008BB0AE /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CC12802A795607008BB0AE /* AppState.swift */; };
+		84CC12832A795BEE008BB0AE /* GroupListContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CC12822A795BEE008BB0AE /* GroupListContainerView.swift */; };
+		84CC12852A795DE1008BB0AE /* AddNewGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CC12842A795DE1008BB0AE /* AddNewGroupView.swift */; };
+		84CC12892A796F01008BB0AE /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CC12882A796F01008BB0AE /* Group.swift */; };
+		84CC128C2A799226008BB0AE /* GroupListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CC128B2A799226008BB0AE /* GroupListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +39,13 @@
 		84CC12772A79485C008BB0AE /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		84CC127A2A794E90008BB0AE /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		84CC127C2A7950BF008BB0AE /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		84CC127E2A795448008BB0AE /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		84CC12802A795607008BB0AE /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		84CC12822A795BEE008BB0AE /* GroupListContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupListContainerView.swift; sourceTree = "<group>"; };
+		84CC12842A795DE1008BB0AE /* AddNewGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewGroupView.swift; sourceTree = "<group>"; };
+		84CC12882A796F01008BB0AE /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
+		84CC128A2A798D1D008BB0AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		84CC128B2A799226008BB0AE /* GroupListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,11 +82,12 @@
 		84CC12592A7943BC008BB0AE /* chat */ = {
 			isa = PBXGroup;
 			children = (
+				84CC128A2A798D1D008BB0AE /* Info.plist */,
+				84CC125A2A7943BC008BB0AE /* chatApp.swift */,
+				84CC125C2A7943BC008BB0AE /* ContentView.swift */,
 				84CC12792A794E7F008BB0AE /* Models */,
 				84CC12762A794824008BB0AE /* Extensions */,
 				84CC12732A79461C008BB0AE /* Views */,
-				84CC125A2A7943BC008BB0AE /* chatApp.swift */,
-				84CC125C2A7943BC008BB0AE /* ContentView.swift */,
 				84CC12682A794434008BB0AE /* GoogleService-Info.plist */,
 				84CC125E2A7943BD008BB0AE /* Assets.xcassets */,
 				84CC12602A7943BD008BB0AE /* Preview Content */,
@@ -92,8 +106,12 @@
 		84CC12732A79461C008BB0AE /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				84CC127E2A795448008BB0AE /* MainView.swift */,
 				84CC12742A79462F008BB0AE /* SignUpView.swift */,
 				84CC127C2A7950BF008BB0AE /* LoginView.swift */,
+				84CC12822A795BEE008BB0AE /* GroupListContainerView.swift */,
+				84CC12842A795DE1008BB0AE /* AddNewGroupView.swift */,
+				84CC128B2A799226008BB0AE /* GroupListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -110,6 +128,8 @@
 			isa = PBXGroup;
 			children = (
 				84CC127A2A794E90008BB0AE /* Model.swift */,
+				84CC12802A795607008BB0AE /* AppState.swift */,
+				84CC12882A796F01008BB0AE /* Group.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -194,11 +214,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84CC12892A796F01008BB0AE /* Group.swift in Sources */,
 				84CC127D2A7950BF008BB0AE /* LoginView.swift in Sources */,
+				84CC12852A795DE1008BB0AE /* AddNewGroupView.swift in Sources */,
+				84CC127F2A795448008BB0AE /* MainView.swift in Sources */,
 				84CC127B2A794E90008BB0AE /* Model.swift in Sources */,
+				84CC12812A795607008BB0AE /* AppState.swift in Sources */,
 				84CC12782A79485C008BB0AE /* String+Extensions.swift in Sources */,
 				84CC125D2A7943BC008BB0AE /* ContentView.swift in Sources */,
+				84CC12832A795BEE008BB0AE /* GroupListContainerView.swift in Sources */,
 				84CC12752A79462F008BB0AE /* SignUpView.swift in Sources */,
+				84CC128C2A799226008BB0AE /* GroupListView.swift in Sources */,
 				84CC125B2A7943BC008BB0AE /* chatApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -331,6 +357,7 @@
 				DEVELOPMENT_TEAM = Z8S324L6HY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = chat/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -360,6 +387,7 @@
 				DEVELOPMENT_TEAM = Z8S324L6HY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = chat/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
