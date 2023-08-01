@@ -6,15 +6,31 @@
 //
 
 import SwiftUI
+import FirebaseAuth
 
 struct SignUpView: View {
     
     @State private var email:String = ""
     @State private var password:String = ""
     @State private var displayName:String = ""
+    @State private var errorMessage:String = ""
+    
+    @EnvironmentObject private var model: Model
+
     
     private var isFormValid: Bool{
         !email.isEmptyOrWhiteSpace && !password.isEmptyOrWhiteSpace && !displayName.isEmptyOrWhiteSpace
+    }
+    
+    private func signUp() async {
+        
+        do{
+            let result = try await Auth.auth().createUser(withEmail: email, password: password)
+            try await model.UpdateDisplayName(for: result.user, displayName: displayName)
+        } catch{
+            errorMessage = error.localizedDescription
+        }
+        
     }
 
     
@@ -31,7 +47,7 @@ struct SignUpView: View {
                 
                 Button("Sign Up"){
                     Task{
-                        
+                        await signUp()
                     }
                 }
                 .disabled(!isFormValid)
@@ -43,12 +59,14 @@ struct SignUpView: View {
                 
                 Spacer()
             }
+            
+            Text(errorMessage)
         }
     }
 }
 
 struct SignUpView_Previews: PreviewProvider {
     static var previews: some View {
-        SignUpView()
+        SignUpView().environmentObject(Model())
     }
 }

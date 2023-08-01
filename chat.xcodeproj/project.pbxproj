@@ -18,6 +18,8 @@
 		84CC12722A7944B8008BB0AE /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 84CC12712A7944B8008BB0AE /* FirebaseStorage */; };
 		84CC12752A79462F008BB0AE /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CC12742A79462F008BB0AE /* SignUpView.swift */; };
 		84CC12782A79485C008BB0AE /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CC12772A79485C008BB0AE /* String+Extensions.swift */; };
+		84CC127B2A794E90008BB0AE /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CC127A2A794E90008BB0AE /* Model.swift */; };
+		84CC127D2A7950BF008BB0AE /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CC127C2A7950BF008BB0AE /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		84CC12682A794434008BB0AE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		84CC12742A79462F008BB0AE /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		84CC12772A79485C008BB0AE /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		84CC127A2A794E90008BB0AE /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		84CC127C2A7950BF008BB0AE /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +69,7 @@
 		84CC12592A7943BC008BB0AE /* chat */ = {
 			isa = PBXGroup;
 			children = (
+				84CC12792A794E7F008BB0AE /* Models */,
 				84CC12762A794824008BB0AE /* Extensions */,
 				84CC12732A79461C008BB0AE /* Views */,
 				84CC125A2A7943BC008BB0AE /* chatApp.swift */,
@@ -88,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				84CC12742A79462F008BB0AE /* SignUpView.swift */,
+				84CC127C2A7950BF008BB0AE /* LoginView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -98,6 +104,14 @@
 				84CC12772A79485C008BB0AE /* String+Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		84CC12792A794E7F008BB0AE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				84CC127A2A794E90008BB0AE /* Model.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,6 +194,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84CC127D2A7950BF008BB0AE /* LoginView.swift in Sources */,
+				84CC127B2A794E90008BB0AE /* Model.swift in Sources */,
 				84CC12782A79485C008BB0AE /* String+Extensions.swift in Sources */,
 				84CC125D2A7943BC008BB0AE /* ContentView.swift in Sources */,
 				84CC12752A79462F008BB0AE /* SignUpView.swift in Sources */,
