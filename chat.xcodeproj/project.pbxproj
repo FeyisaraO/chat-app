@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84BEB5742A7A7B8900C14BE6 /* Storage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BEB5732A7A7B8900C14BE6 /* Storage+Extensions.swift */; };
 		84CC125B2A7943BC008BB0AE /* chatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CC125A2A7943BC008BB0AE /* chatApp.swift */; };
 		84CC125D2A7943BC008BB0AE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CC125C2A7943BC008BB0AE /* ContentView.swift */; };
 		84CC125F2A7943BD008BB0AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84CC125E2A7943BD008BB0AE /* Assets.xcassets */; };
@@ -30,9 +31,15 @@
 		84CC12902A79AF8D008BB0AE /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CC128F2A79AF8D008BB0AE /* ChatMessage.swift */; };
 		84CC12922A79C021008BB0AE /* ChatMessageListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CC12912A79C021008BB0AE /* ChatMessageListView.swift */; };
 		84CC12962A7A599F008BB0AE /* ChatMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CC12952A7A599F008BB0AE /* ChatMessageView.swift */; };
+		84CC12982A7A6B69008BB0AE /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CC12972A7A6B69008BB0AE /* SettingsView.swift */; };
+		84CC129A2A7A6BCE008BB0AE /* image+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CC12992A7A6BCE008BB0AE /* image+Extension.swift */; };
+		84CC129C2A7A7137008BB0AE /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CC129B2A7A7137008BB0AE /* ImagePicker.swift */; };
+		84CC129E2A7A73B5008BB0AE /* UIImagePickerController.sourceType+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CC129D2A7A73B5008BB0AE /* UIImagePickerController.sourceType+Extension.swift */; };
+		84CC12A02A7A7795008BB0AE /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CC129F2A7A7795008BB0AE /* UIImage+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		84BEB5732A7A7B8900C14BE6 /* Storage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storage+Extensions.swift"; sourceTree = "<group>"; };
 		84CC12572A7943BC008BB0AE /* chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84CC125A2A7943BC008BB0AE /* chatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chatApp.swift; sourceTree = "<group>"; };
 		84CC125C2A7943BC008BB0AE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -54,6 +61,11 @@
 		84CC128F2A79AF8D008BB0AE /* ChatMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessage.swift; sourceTree = "<group>"; };
 		84CC12912A79C021008BB0AE /* ChatMessageListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessageListView.swift; sourceTree = "<group>"; };
 		84CC12952A7A599F008BB0AE /* ChatMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessageView.swift; sourceTree = "<group>"; };
+		84CC12972A7A6B69008BB0AE /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		84CC12992A7A6BCE008BB0AE /* image+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "image+Extension.swift"; sourceTree = "<group>"; };
+		84CC129B2A7A7137008BB0AE /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		84CC129D2A7A73B5008BB0AE /* UIImagePickerController.sourceType+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImagePickerController.sourceType+Extension.swift"; sourceTree = "<group>"; };
+		84CC129F2A7A7795008BB0AE /* UIImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +135,8 @@
 				84CC128D2A79AA75008BB0AE /* GroupDetailView.swift */,
 				84CC12912A79C021008BB0AE /* ChatMessageListView.swift */,
 				84CC12952A7A599F008BB0AE /* ChatMessageView.swift */,
+				84CC12972A7A6B69008BB0AE /* SettingsView.swift */,
+				84CC129B2A7A7137008BB0AE /* ImagePicker.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -131,6 +145,10 @@
 			isa = PBXGroup;
 			children = (
 				84CC12772A79485C008BB0AE /* String+Extensions.swift */,
+				84CC12992A7A6BCE008BB0AE /* image+Extension.swift */,
+				84CC129D2A7A73B5008BB0AE /* UIImagePickerController.sourceType+Extension.swift */,
+				84CC129F2A7A7795008BB0AE /* UIImage+Extensions.swift */,
+				84BEB5732A7A7B8900C14BE6 /* Storage+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -229,15 +247,21 @@
 				84CC12962A7A599F008BB0AE /* ChatMessageView.swift in Sources */,
 				84CC12892A796F01008BB0AE /* Group.swift in Sources */,
 				84CC12922A79C021008BB0AE /* ChatMessageListView.swift in Sources */,
+				84CC12A02A7A7795008BB0AE /* UIImage+Extensions.swift in Sources */,
 				84CC127D2A7950BF008BB0AE /* LoginView.swift in Sources */,
 				84CC12852A795DE1008BB0AE /* AddNewGroupView.swift in Sources */,
+				84CC129E2A7A73B5008BB0AE /* UIImagePickerController.sourceType+Extension.swift in Sources */,
+				84BEB5742A7A7B8900C14BE6 /* Storage+Extensions.swift in Sources */,
+				84CC12982A7A6B69008BB0AE /* SettingsView.swift in Sources */,
 				84CC127F2A795448008BB0AE /* MainView.swift in Sources */,
+				84CC129C2A7A7137008BB0AE /* ImagePicker.swift in Sources */,
 				84CC127B2A794E90008BB0AE /* Model.swift in Sources */,
 				84CC12812A795607008BB0AE /* AppState.swift in Sources */,
 				84CC12782A79485C008BB0AE /* String+Extensions.swift in Sources */,
 				84CC12902A79AF8D008BB0AE /* ChatMessage.swift in Sources */,
 				84CC125D2A7943BC008BB0AE /* ContentView.swift in Sources */,
 				84CC12832A795BEE008BB0AE /* GroupListContainerView.swift in Sources */,
+				84CC129A2A7A6BCE008BB0AE /* image+Extension.swift in Sources */,
 				84CC12752A79462F008BB0AE /* SignUpView.swift in Sources */,
 				84CC128C2A799226008BB0AE /* GroupListView.swift in Sources */,
 				84CC128E2A79AA75008BB0AE /* GroupDetailView.swift in Sources */,
