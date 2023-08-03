@@ -7,6 +7,15 @@
 
 import Foundation
 
+enum LoadingState: Hashable, Identifiable {
+    case idle
+    case loading(String)
+    
+    var id: Self {
+        return self
+    }
+}
+
 enum Route: Hashable {
     case main
     case login
@@ -15,6 +24,7 @@ enum Route: Hashable {
 
 class AppState: ObservableObject {
     
+    @Published var loadingState: LoadingState = .idle
     @Published var routes: [Route] = []
-    
+
 }

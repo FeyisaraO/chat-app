@@ -13,7 +13,7 @@ struct SignUpView: View {
     @State private var email:String = ""
     @State private var password:String = ""
     @State private var displayName:String = ""
-    @State private var errorMessage:String = ""
+    @State private var errorMessage: String = ""
     
     @EnvironmentObject private var model: Model
     @EnvironmentObject private var appState: AppState

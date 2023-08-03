@@ -48,6 +48,14 @@ struct chatApp: App {
                 }
                 
             }
+            .overlay(alignment: .top, content: {
+                switch appState.loadingState {
+                    case .idle:
+                        EmptyView()
+                    case .loading(let message):
+                        LoadingView(message: message)
+                }
+            })
             .environmentObject(model)
             .environmentObject(appState)
         }
