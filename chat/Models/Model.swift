@@ -10,6 +10,7 @@ import FirebaseAuth
 import FirebaseFirestore
 import FirebaseFirestoreSwift
 
+@MainActor
 class Model: ObservableObject {
     
     @Published var groups: [Group] = []
@@ -59,6 +60,7 @@ class Model: ObservableObject {
     func listenForChatMessages(in group: Group) {
         
         let db = Firestore.firestore()
+        
         chatMessages.removeAll()
         
         guard let documentId = group.documentId else { return }

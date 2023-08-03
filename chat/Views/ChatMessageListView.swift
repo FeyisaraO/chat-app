@@ -13,7 +13,7 @@ struct ChatMessageListView: View {
     let chatMessages: [ChatMessage]
     
     private func isChatMessageFromCurrentUser(_ chatMessage: ChatMessage) -> Bool {
-        //get current user
+        
         guard let currentUser = Auth.auth().currentUser else {
             return false
         }
@@ -22,18 +22,19 @@ struct ChatMessageListView: View {
     }
     
     var body: some View {
-        ScrollView{
+        
+        ScrollView {
             VStack {
-                ForEach(chatMessages){ chatMessage in
+                ForEach(chatMessages) { chatMessage in
                     VStack {
-                        if isChatMessageFromCurrentUser(chatMessage){
+                        if isChatMessageFromCurrentUser(chatMessage) {
                             HStack {
                                 Spacer()
                                 ChatMessageView(chatMessage: chatMessage, direction: .right, color: .blue)
                             }
                         } else {
                             HStack {
-                                ChatMessageView(chatMessage: chatMessage, direction: .right, color: .gray)
+                                ChatMessageView(chatMessage: chatMessage, direction: .left, color: .gray)
                                 Spacer()
                             }
                         }
@@ -42,7 +43,9 @@ struct ChatMessageListView: View {
                     }.listRowSeparator(.hidden)
                 }
             }
-        }.padding(.bottom, 60)
+        }.padding([.bottom], 60)
+        
+        
     }
 }
 
